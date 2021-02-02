@@ -31,14 +31,38 @@ span {
   color:#808080;
   font-family: '游明朝', 'Yu Mincho'
 }
+.top-wrapper {
+  height: 1200px;
+}
+.top-container {
+  width: 70%;
+  margin: 0 14%;
+}
+.item-detail {
+  width: 196px;
+  height: 650px;
+}
+.top-detail {
+  font-size: 28px;
+  color:#808080;
+  font-family: '游明朝', 'Yu Mincho';
+  display: inline-block;
+}
+.top-detail span {
+  font-size: 28px;
+  color:rgba(204,21,21,1);
+  font-family: '游明朝', 'Yu Mincho';
+  transform: rotate(90deg);
+}
 .item-wrapper{
   width: 100%;
-  height:100%;
+  height: 10600px;
 }
 .item-container{
   width: 84%;
   height: 100%;
   margin: 0 auto;
+  display: none;
 }
 .item {
   width: 84%;
@@ -65,6 +89,13 @@ span {
     opacity: 1.0;
   }
 }
+.show {
+  display:block;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
 .slide-wrap {
   height: 1200px;
   width: 900px;
