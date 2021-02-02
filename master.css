@@ -1,0 +1,146 @@
+body{
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial,sans-serif;
+    background-color: #E1E2E4;
+}
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+p {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+span {
+  font-size: 28px;
+  color:#808080;
+  font-family: '游明朝', 'Yu Mincho'
+}
+.item-wrapper{
+  width: 100%;
+  height:100%;
+}
+.item-container{
+  width: 84%;
+  height: 100%;
+  margin: 0 auto;
+}
+.item {
+  width: 84%;
+  height: 900px;
+  font-size: 36px;
+  margin: 64px 0px;
+}
+
+.item img {
+  width: 440px;
+  height: 560px;
+  display: inline;
+}
+.item-details {
+  width: 540px;
+  padding: 20% 0;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+.slide-wrap {
+  height: 1200px;
+  width: 900px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.container-slide-block {
+  width: 900px;
+  height: 1200px;
+  top: 0px;
+  position: absolute;
+}
+.slide-blocks {
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  position: relative;
+}
+.slide-blocks ul  {
+  height: 600px;
+  position: relative;
+  float: left;
+  display: inline;
+  overflow: hidden;
+}
+.slide-blocks li {
+  height: 600px;
+  position: relative;
+  float: left;
+  display: inline;
+  overflow: hidden;
+}
+
+@keyframes slideNext {
+  0% {
+
+    left: 0px;
+  }
+  100% {
+    left: 900px;
+  }
+}
+.next {
+  animation-fill-mode: backwards;
+  animation-name: slideNext;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidePrev {
+  0% {
+    left: 900px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.prev {
+  animation-fill-mode: backwards;
+  animation-name: slidePrev;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+li img {
+  height: 600px;
+  width: 900px;
+}
+#next-bar, .point {
+  color: #fff;
+  box-shadow: 1px;
+  text-align: center;
+  float: left;
+}
+.point:hover {
+  background-color: #fff;
+}
