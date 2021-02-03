@@ -26,13 +26,8 @@ p {
   font-size: 14px;
   margin: 10px 0px;
 }
-span {
-  font-size: 28px;
-  color:#808080;
-  font-family: '游明朝', 'Yu Mincho'
-}
 .top-wrapper {
-  height: 1200px;
+  height: 900px;
 }
 .top-container {
   width: 70%;
@@ -43,16 +38,48 @@ span {
   height: 650px;
 }
 .top-detail {
-  font-size: 28px;
+  margin-top: 60px;
+  font-size: 24px;
   color:#808080;
   font-family: '游明朝', 'Yu Mincho';
   display: inline-block;
+  writing-mode: vertical-rl;
 }
-.top-detail span {
-  font-size: 28px;
-  color:rgba(204,21,21,1);
+.menus {
+  margin: 120px auto 240px auto;
+  font-size: 24px;
+  color:#808080;
   font-family: '游明朝', 'Yu Mincho';
-  transform: rotate(90deg);
+}
+.menus ul {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  writing-mode: vertical-rl;
+}
+.menus li {
+  position: absolute;
+}
+
+.intro p {
+  margin: 0 auto;
+  font-size: 24px;
+  color:#808080;
+  font-family: '游明朝', 'Yu Mincho';
+  writing-mode: vertical-rl;
+}
+.utakata {
+  margin-top: 64px;
+  padding: 60px 0;
+}
+.utakata p {
+  width: 1200px;
+  height: 540px;
+  margin: 0 auto;
+  font-size: 18px;
+  color:#808080;
+  font-family: '游明朝', 'Yu Mincho';
 }
 .item-wrapper{
   width: 100%;
@@ -106,7 +133,7 @@ span {
 }
 .container-slide-block {
   width: 900px;
-  height: 1200px;
+  height: 600px;
   top: 0px;
   position: absolute;
 }
@@ -166,11 +193,28 @@ li img {
   height: 600px;
   width: 900px;
 }
-#next-bar, .point {
-  color: #fff;
+#next-btn {
+  position:absolute;
+  top: 50%;
+  right: 5px;
+  z-index: 10;
+}
+#prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  z-index: 10;
+}
+.points {
+  position: fixed;
+  top: 20%;
+  right: 10px;
+  z-index: 10;
+}
+.point {
+  width: 10px;
+  height: 10px;
   box-shadow: 1px;
-  text-align: center;
-  float: left;
 }
 .point:hover {
   background-color: #fff;

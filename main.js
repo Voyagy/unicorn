@@ -13,7 +13,6 @@ const dataBooks = [
                   ];
 
 const items = document.querySelector('.item-container');
-let item;
 function imageIN() {
   let itemBox = '';
   for(const data of dataBooks){
