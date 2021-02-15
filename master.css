@@ -14,6 +14,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration-line: none;
+  color: #ffffff;
+}
 .wrapper {
   width: 100%;
 }
@@ -54,7 +58,7 @@ p {
   font-size: 28px;
   font-weight: bold;
 }
-.navis {
+.navies {
   position: absolute;
   right: 160px;
   font-size: 24px;
@@ -66,8 +70,11 @@ p {
   position: relative;
   writing-mode: vertical-rl;
 }
-.navis li {
+.navies li {
   position: absolute;
+}
+.navies a {
+  font-weight: bold;
 }
 .top-images {
   height: 1149px;
@@ -79,15 +86,17 @@ p {
 .news {
   position: absolute;
   left: 60px;
+  font-size: 12px;
 }
-.news h2 {
-  color: rgba(236,233,225,1);
+.news h1 {
+  color: #ffffff;
   margin: 0;
+  font-family: '游明朝', 'Yu Mincho';
 }
 .report {
   font-size: 12px;
   width: 600px;
-  height: 366px;
+  height: 200px;
 }
 .report li {
   width: 600px;
@@ -100,20 +109,92 @@ p {
   text-align: center;
   color: #ffffff;
 }
+.news-topic {
+  margin-left: 8px;
+  font-size: 12px;
+}
 .new {
-  width: 54px;
+  width: 64px;
+  height: 14px;
   padding: 2px 10px;
-  margin: 4px 6px;
-  border-radius: 4px;
+  font-size: 10px;
+  margin: 10px 6px;
+  border-radius: 2px;
   background: linear-gradient(0deg, #494944, #a19593);
 }
-
-.intro p {
-  margin: 0 auto;
-  font-size: 24px;
-  color:#808080;
+.company {
+  width: 64px;
+  height: 14px;
+  padding: 2px 10px;
+  font-size: 10px;
+  margin: 10px 6px;
+  border-radius: 2px;
+  background-color: rgba(238,157,31,1);
+}
+.news-lineup p {
+  width: 74px;
+  height: 28px;
+  padding-top: 4px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+.news-lineup a {
+  color: rgba(1,1,1,1);
+}
+.news-lineup p:hover {
+  background-color: rgba(87,90,91,1);
+  color: #ffffff;
+}
+.sns {
+  margin-top: 36px;
+}
+.sns li {
+  float: left;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-right: 20px;
+  padding: 4px 6px;
+}
+.twitter {
+  background-color: #1b95e0;
+}
+.good {
+  background-color: rgba(48,67,218,1);
+}
+#twitter,#good {
+  font-weight: bold;
+}
+#intro {
+  width: 640px;
+  font-size: 16px;
+  color:#ffffff;
   font-family: '游明朝', 'Yu Mincho';
   writing-mode: vertical-rl;
+  margin: 0 30% 0 20%;
+  position: relative;
+}
+
+#intro-title {
+  font-size: 54px;
+  font-weight: bold;
+}
+#intro-ruby {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#intro-detaile {
+  margin-top: 80px;
+  float: right;
+  font-weight: bold;
+}
+#slide-navi {
+  border: solid 2px #ffffff;
+  padding: 4px 2px;
+  margin-top: 360px;
+  position:absolute;
+  left: 30px;
+  font-size: 12px;
 }
 .utakata {
   margin-top: 64px;
