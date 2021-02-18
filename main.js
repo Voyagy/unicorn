@@ -19,16 +19,16 @@ function imageIN() {
     let even = data.id;
     if(even % 2 == 0){
      itemBox += `<div class="item"  id=${data.id}>
-                <img src=${data.src}  style="float:right">
-                <div class="item-details" style="float:left">
+                <img src=${data.src}  style="right:50px;">
+                <div class="item-details" style="right:360px;">
                 <p class="name"><span>${data.title}</span></p>
                 <p>${data.detail}</p>
                 </div>
                 </div>`
       }else{
        itemBox += `<div class="item"  id=${data.id}>
-                    <img src=${data.src} style="float:left">
-                    <div class="item-details" style="float:right">
+                    <img src=${data.src} style="left:50px;">
+                    <div class="item-details" style="left:360px;">
                     <p class="name"><span>${data.title}</span></p>
                     <p>${data.detail}</p>
                     </div>

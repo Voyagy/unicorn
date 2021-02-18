@@ -2,6 +2,7 @@ body{
   margin: 0 0;
   padding: 0 0;
   height: 100%;
+  width: 100%;
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial,sans-serif;
     background-color: #E1E2E4;
 }
@@ -20,10 +21,12 @@ a {
 }
 .wrapper {
   width: 100%;
+  height:100%;
 }
 
 .container {
   width: 100%;
+  height: 100%;
 }
 
 p {
@@ -171,8 +174,9 @@ p {
   color:#ffffff;
   font-family: '游明朝', 'Yu Mincho';
   writing-mode: vertical-rl;
-  margin: 0 30% 0 20%;
+  margin: 0 5% 0 20%;
   position: relative;
+  right: 30px;
 }
 
 #intro-title {
@@ -196,17 +200,90 @@ p {
   left: 30px;
   font-size: 12px;
 }
+.lineup {
+  height: 1000px;
+  position: relative;
+}
+.lineup-top {
+  writing-mode: vertical-rl;
+  color: #ffffff;
+  font-family: '游明朝', 'Yu Mincho';
+  margin-top: 150px;
+  position: absolute;
+  top: 24px;
+  right: 134px;
+}
+#lineup-title {
+  font-size: 68px;
+}
+#lineup-ruby {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#lineup-detaile {
+  margin-top: 80px;
+  float: right;
+  font-weight: bold;
+}
+.unicorn-item {
+  width: 84%;
+  height: 600px;
+  font-size: 36px;
+  margin: 64px 20%;
+  position: absolute;
+  top: 340px;
+  left: 142px;
+}
+
+.unicorn-item img {
+  width: 150px;
+  height: 560px;
+  display: inline;
+  float: left;
+}
+.unicorn-item-detail {
+  width: 320px;
+  margin-left: 60px;
+  padding: 20% 0;
+  float:left;
+}
+.utakata-container{
+  height: 800px;
+  width: 1160px;
+  margin: 0 20%;
+  display: flex;
+  position: relative;
+}
 .utakata {
   margin-top: 64px;
+  margin-left: 30px;
   padding: 60px 0;
-}
-.utakata p {
-  width: 1200px;
-  height: 540px;
-  margin: 0 auto;
-  font-size: 18px;
-  color:#808080;
+  width: 320px;
+  height: 550px;
   font-family: '游明朝', 'Yu Mincho';
+  background-color: rgba(182,190,195,1);
+}
+.bancy-item {
+  height: 600px;
+  font-size: 36px;
+  position: absolute;
+  right: 200px;
+}
+
+.bancy-item img {
+  width: 150px;
+  height: 560px;
+  display: inline;
+  position: absolute;
+  top: 60px;
+  right: 65px;
+}
+.bancy-item-detail {
+  width: 320px;
+  padding: 20% 0;
+  position: absolute;
+  top: 280px;
+  right: 260px;
 }
 .item-wrapper{
   width: 100%;
@@ -220,19 +297,22 @@ p {
 }
 .item {
   width: 84%;
-  height: 900px;
+  height: 600px;
   font-size: 36px;
-  margin: 64px 0px;
+  position: relative;
 }
 
 .item img {
   width: 440px;
   height: 560px;
   display: inline;
+  position: absolute;
 }
 .item-details {
-  width: 540px;
+  width: 320px;
   padding: 20% 0;
+  position: absolute;
+  top: 80px;
 }
 
 @keyframes fadeIn {
