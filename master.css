@@ -386,25 +386,25 @@ p {
 
 .slide-wrap {
   height: 900px;
-  width: 1660px;
+  width: 1620px;
   overflow: hidden;
   position: relative;
   margin: 0 0;
 }
 .container-slide-block {
-  width: 1660px;
+  width: 1620px;
   height: 900px;
   top: 0px;
   position: absolute;
 }
 .slide-blocks {
   top: 0;
-  position: absolute;
   overflow: hidden;
   position: relative;
 }
 .slide-blocks ul  {
   height: 900px;
+  position: absolute;
   position: relative;
   float: left;
   text-align: center;
@@ -422,9 +422,13 @@ p {
   height: 720px;
   width: 1620px;
 }
+.slide-img {
+  width: 1620px;
+  overflow: hidden;
+}
 .slide-detail {
   position: absolute;
-  top: 20px;
+  top: 0px;
   right: 100px;
   color:#ffffff;
   font-family: '游明朝', 'Yu Mincho';
@@ -433,6 +437,9 @@ p {
   background-color: rgba(204,218,218,0.4);
   margin: 0 auto;
   writing-mode: vertical-rl;
+}
+.number {
+  writing-mode: horizontal-tb;
 }
 .slide-detail-title {
   font-size: 40px;
@@ -475,16 +482,16 @@ p {
 
 #next-btn {
   position:absolute;
-  top: 50%;
-  right: 200px;
+  top: 40%;
+  right: 0%;
   z-index: 10;
   width: 100px;
   height:100px;
 }
 #prev-btn {
   position: absolute;
-  top: 50%;
-  left: 200px;
+  top: 40%;
+  left: 0%;
   z-index: 10;
   width: 100px;
   height:100px;
