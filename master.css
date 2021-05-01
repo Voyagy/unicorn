@@ -1,10 +1,9 @@
-body{
+/* リセット　*/
+html,body{
   margin: 0 0;
   padding: 0 0;
-  height: 100%;
-  width: 100%;
-  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial,sans-serif;
-  background-color: #E1E2E4;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',' Meirio メイリオ','ＭＳ Ｐゴシック',Arial,sans-serif;
+  background-color: rgba(107,159,227,.56);
 }
 li {
   list-style-type: none;
@@ -15,18 +14,118 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* all CSS */
+
 a {
   text-decoration-line: none;
   color: #ffffff;
 }
 .wrapper {
-  width: 100%;
-  height:100%;
+  height:auto;
+  position: relative;
 }
 
-.container {
+/* Actions */
+
+/* フェードインアクション　*/
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* nextスライド　*/
+
+@keyframes slideNext {
+  0% {
+
+    right: 0px;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+/* prevスライド　*/
+
+@keyframes slidePrev {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+/* バックカラーアクション　*/
+
+@keyframes backAction {
+  100% {
+    background-position:0px center;
+}
+}
+
+
+/* ヘッダー　*/
+
+header {
   width: 100%;
-  height: 100%;
+  height: 28px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 10;
+}
+.header-contents {
+  height: 24px;
+  width: 100%;
+  float: left;
+}
+.header-logo {
+  margin-left: 10px;
+  display: inline;
+}
+.header-logo-image {
+  height: 20px;
+}
+.header-links {
+  display: inline-block;
+  height: 24px;
+  font-size: 12px;
+  margin-left: 20px
+}
+.header-links li{
+  float:left;
+  font-family: '游明朝', 'Yu Mincho';
+  font-weight: bold;
+  margin-top: 6px;
+  margin-left: 40px;
+}
+.header-links a {
+  color: rgba(17,18,20,1);
+}
+.header-snss {
+  display: inline-block;
+  float: right;
+}
+.header-sns {
+  height: 24px;
+  width: 200px;
+  display: inline-block ;
+  font-size: 8px;
+  color: #ffffff;
+}
+.header-sns li {
+  margin-top: 6px;
+  margin-left: 8px;
+  border-radius: 2px;
+  height: 16px;
+  float: left;
 }
 
 p {
@@ -34,13 +133,19 @@ p {
   margin: 10px 0px;
 }
 
+/* トップコンテンツ　*/
+
 .top-container {
   height: 1140px;
   margin: 0 13%;
   position: relative;
 }
-.top-copy img {
+.top-copy {
+  height: 318px;
+}
+.top-title {
   width: 179px;
+  display: none;
 }
 .top-copy h1 {
   padding: 36px 0 0 66px;
@@ -115,6 +220,17 @@ p {
 .news-topic {
   margin-left: 8px;
   font-size: 12px;
+  background-image: url(./images/ps_source/background2.png);
+  background-repeat: no-repeat;
+  background-size: 484px;
+  background-position:-484px center;
+}
+.news-topic:hover {
+  color: #ffffff;
+  animation-fill-mode: forwards;
+  animation-name: backAction;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .new {
   width: 64px;
@@ -168,6 +284,13 @@ p {
 #twitter,#good {
   font-weight: bold;
 }
+.intro-container {
+  background-image: url(./images/ps_source/yashiki.png);
+  background-size: cover;
+}
+
+/* イントロダクション　*/
+
 #intro {
   width: 640px;
   font-size: 16px;
@@ -224,17 +347,30 @@ p {
   margin-top: 80px;
   float: right;
   font-weight: bold;
+  background-color: rgba(129,139,142,.63);
 }
+
+/* 主力商品　*/
+
 .unicorn-item {
   width: 84%;
   height: 600px;
   font-size: 36px;
-  margin: 64px 20%;
+  margin: 0 auto;
   position: absolute;
   top: 340px;
-  left: 142px;
+  right: 0;
 }
-
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(99,99,99,.77);
+}
+.detail {
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: rgba(41,41,41,1);
+}
 .unicorn-item img {
   width: 150px;
   height: 560px;
@@ -243,14 +379,16 @@ p {
 }
 .unicorn-item-detail {
   width: 320px;
+  height: 400px;
   margin-left: 60px;
-  padding: 20% 0;
+  padding: 36px 6px 0 6px;
   float:left;
+  background-color: rgba(211,218,221,.51);
 }
 .utakata-container{
   height: 800px;
-  width: 1160px;
-  margin: 0 10% 0 28%;
+  width: 100%;
+  margin: 0 0;
   display: flex;
   position: relative;
 }
@@ -278,6 +416,9 @@ p {
   font-weight: bold;
   color: rgba(80,83,96,1);
 }
+
+/* おすすめ商品　*/
+
 .bancy-item {
   height: 600px;
   font-size: 36px;
@@ -302,14 +443,14 @@ p {
 }
 .taizan-container{
   height: 800px;
-  width: 1160px;
-  margin: 0 20%;
+  width: auto;
+  margin: 0 0;
   display: flex;
   position: relative;
+  right: 0px
 }
 .taizan {
   margin-top: 64px;
-  margin-left: 30px;
   padding: 8px 8px 12px 8px;
   width: 240px;
   height: 320px;
@@ -322,6 +463,8 @@ p {
   position: absolute;
   right: 200px;
 }
+
+/* おすすめその２　*/
 
 .cshatria-item img {
   width: 400px;
@@ -338,6 +481,9 @@ p {
   top: 80px;
   right: 450px;
 }
+
+/* itemコンテンツ　*/
+
 .item-wrapper{
   width: 100%;
   height: 7200px;
@@ -369,14 +515,23 @@ p {
   top: 80px;
 }
 
-@keyframes fadeIn {
-  0%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 1.0;
-  }
+.options {
+  height: 84px;
+  width: 320px;
+  text-align: center;
 }
+.option {
+}
+.option li {
+  font-size: 6px;
+  float: left;
+  margin-left: 4px;
+  padding: 2px 4px;
+  color: #ffffff;
+  background-color: rgba(85,86,91,.89);
+}
+
+
 .show {
   display:block;
   animation-name: fadeIn;
@@ -384,20 +539,25 @@ p {
   animation-iteration-count: 1;
 }
 
+/* スライダーCSS　*/
+
 .slide-wrap {
   height: 900px;
-  width: 1620px;
+  width: auto;
   overflow: hidden;
   position: relative;
   margin: 0 0;
 }
 .container-slide-block {
-  width: 1620px;
+  width: auto;
   height: 900px;
-  top: 0px;
   position: absolute;
+  top: 0px;
+  right: 0px;
 }
 .slide-blocks {
+  height: 900px;
+  margin: 0 0;
   top: 0;
   overflow: hidden;
   position: relative;
@@ -405,7 +565,6 @@ p {
 .slide-blocks ul  {
   height: 900px;
   position: absolute;
-  position: relative;
   float: left;
   text-align: center;
   display: inline;
@@ -420,10 +579,10 @@ p {
 }
 .slide li img {
   height: 720px;
-  width: 1620px;
+  width: 1500px;
 }
 .slide-img {
-  width: 1620px;
+  width: 1500px;
   overflow: hidden;
 }
 .slide-detail {
@@ -449,15 +608,8 @@ p {
   font-size: 24px;
   text-align: left;
 }
-@keyframes slideNext {
-  0% {
 
-    left: 0px;
-  }
-  100% {
-    left: 1620px;
-  }
-}
+
 .next {
   animation-fill-mode: backwards;
   animation-name: slideNext;
@@ -465,14 +617,7 @@ p {
   animation-iteration-count: 1;
 }
 
-@keyframes slidePrev {
-  0% {
-    left: 1620px;
-  }
-  100% {
-    left: 0px;
-  }
-}
+
 .prev {
   animation-fill-mode: backwards;
   animation-name: slidePrev;
@@ -496,6 +641,9 @@ p {
   width: 100px;
   height:100px;
 }
+
+/* ジャンプポイント　*/
+
 .points {
   position: fixed;
   top: 20%;
@@ -509,4 +657,63 @@ p {
 }
 .point:hover {
   background-color: #fff;
+}
+
+/* ボトムコンテンツ　*/
+
+.btm-logos {
+  height: 220px;
+}
+.btm-logos ul {
+  margin: 0 20% 0 30%;
+}
+.bottom-logo {
+  float: left;
+  margin-left: 8px;
+}
+.bottom-logo img {
+  height: 100px;
+  width: 200px;
+  opacity: 0.8;
+}
+.bottom-logo:hover {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+.order {
+  text-align: center;
+  margin-top: 20px;
+}
+.bottom-order {
+  width: 124px;
+  height: 46px;
+  opacity: 0.8;
+}
+.bottom-order:hover {
+  background-color: #ffffff;
+  box-shadow: 4px;
+}
+
+/* フッター　*/
+
+.footer-contents {
+  margin-left: 15%;
+  float: both;
+}
+.inc-bottom {
+  height: auto;
+}
+.back1 {
+  display: inline;
+  background-image: url(./images/ps_source/background1.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  background-position:-436px center
+}
+.back1:hover {
+  color: #ffffff;
+  animation-fill-mode: forwards;
+  animation-name: backAction;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }

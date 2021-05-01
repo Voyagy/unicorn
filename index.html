@@ -8,11 +8,39 @@
   </head>
   <body>
       <div class="wrapper">
+        <header>
+          <div class="header-contents">
+            <div class="header-logo">
+              <img class="header-logo-image" src="./images/ps_source/copy.png" alt="headerLogo">
+            </div>
+            <div class="header-links">
+              <ul>
+                <li><a href="#intro"> 唯魂とは</a></li>
+                <li><a href="#lineup">ラインアップ</a></li>
+                <li><a href="#slider">こだわりの造り</a></li>
+                <li><a href="#order-btn">ご購入について</a></li>
+                <li><a href="#news">お知らせ</a></li>
+              </ul>
+            </div>
+            <div class="header-snss">
+              <ul class="header-sns">
+                <li class="twitter">
+                  <i class="fab fa-twitter"></i>
+                  <span id="twitter">twitter</span>
+                </li>
+                <li class="good">
+                  <i class="far fa-thumbs-up"></i>
+                  <span id="good">いいね！　1，156</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
         <div class="container">
           <div class="top-container">
               <div class="top-content">
                 <div class="top-copy">
-                  <h1><img src="./images/ps_source/copy.png" alt="copy"></h1>
+                  <h1><img src="./images/ps_source/copy.png" alt="copy" class="top-title" ></h1>
                   <div class="top-detail">
                     <p>
                       新たな可能性へ<br>
@@ -33,7 +61,7 @@
                   <li><img src="./images/ps_source/unicorn.png"></li>
                 </ul>
               </div>
-              <div class="news">
+              <div class="news" id="news">
                 <h1>お知らせ</h1>
                 <ul class="report">
                   <li>
@@ -72,6 +100,7 @@
                 </ul>
               </div>
             </div>
+        <div class="intro-container">
           <div class="intro" id="intro">
               <p>
               <span id="intro-title">唯魂とは・・・</span><br>
@@ -96,7 +125,7 @@
             <p><span id="slide-navi"><a href="#">こだわりの造り　＞</a></span></p>
           </div>
 
-          <div class="lineup">
+          <div class="lineup" id="lineup">
             <div class="lineup-top">
             <span id="lineup-title">ラインアップ</span><br>
             <span id="lineup-ruby">Lineup</span><br><br>
@@ -110,8 +139,8 @@
           <div class="unicorn-item">
             <img src="./images/ps_source/unicorn.png">
             <div class="unicorn-item-detail">
-             <p class="name"><span>特別純米大吟醸　唯魂（ユニコーン）</span></p>
-             <p>花次杜氏の入魂の作。どこまでも奥行きある奥ゆかしい味わい、気品のある香りをお楽しみください。
+             <p><span class="name">特別純米大吟醸　唯魂（ユニコーン）</span></p>
+             <p class="detail">花次杜氏の入魂の作。どこまでも奥行きある奥ゆかしい味わい、気品のある香りをお楽しみください。<br>
                当酒蔵で最高の品質であることを表現するため、
                ラベルは伝統工芸「雁和紙」を「詫び墨」で染めぬいた「染め和紙」を使用。
               「雁和紙」は、神宮御用紙として神札などに使われている清浄な和紙。
@@ -119,16 +148,16 @@
               </div>
           </div>
           </div>
-        <div class="item-wrapper">
-          <div class="item-container" id="lineup">
-          </div>
         </div>
+        <div class="item-wrapper">
+          <div class="item-container" id="item">
+          </div>
         </div>
         <div class="slide-wrap">
         <div class="container-slide-block" id="slider">
-          <div class="slide-blocks"  style="width:5200px;left:-3240px;">
-            <ul style="width:5200px;" class="slide">
-              <li style="width:1620px;"  id="1">
+          <div class="slide-blocks"  style="width:1500px;right:0%;">
+            <ul style="width:4500px;right:0%;" class="slide">
+              <li class="slide-contents" style="width:1500px;"  id="1">
                 <div class="slide-img">
                   <img src="images/ps_source/denen.jpg" alt="">
                   <div class="slide-detail">
@@ -146,7 +175,7 @@
                   </div>
                 </div>
               </li>
-              <li style="width:1620px;" id="2">
+              <li class="slide-contents" style="width:1500px;" id="2">
                 <div class="slide-img">
                   <img src="./images/ps_source/hakumai_2.jpg" alt="">
                   <div class="slide-detail">
@@ -164,7 +193,7 @@
                   </div>
                 </div>
               </li>
-              <li style="width:1620px;" class="active" id="3">
+              <li class="slide-contents active" style="width:1500px;" id="3">
                 <div class="slide-img">
                   <img src="images/ps_source/inaho.jpg" alt="">
                   <div class="slide-detail">
@@ -190,26 +219,53 @@
       </div>
       <div class="bottom-wrapper">
         <div class="bottom-container">
-          <div class="order-btn">
-            <button type="button" name="button"　class="order-btn">ご注文はこちらから</button>
+          <div class="btm-logos">
+            <ul>
+              <li class="bottom-logo"><img src="images/ps_source/anaheim.png" alt="bottom-logo-left"></li>
+              <li class="bottom-logo"><img src="images/ps_source/logo.png" alt="bottom-logo-center"></li>
+              <li class="bottom-logo"><img src="images/ps_source/logo3.png" alt="bottom-logo-right"></li>
+            </ul>
+          </div>
+          <div class="order">
+            <input class="bottom-order"  id="order-btn" type="image" src="./images/ps_source/order-btn.png" name="" value="">
           </div>
         </div>
       </div>
-      <div class="points">
-        <ul>
-          <li><a href="#1"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#2"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#3"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#4"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#5"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#6"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#7"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#8"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#9"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#10"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-          <li><a href="#11"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
-        </ul>
+      <div class="navi-points">
+        <div class="points">
+          <ul>
+            <li><a href="#1"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#2"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#3"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#4"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#5"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#6"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#7"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#8"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#9"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#10"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+            <li><a href="#11"><img src="images/ps_source/point.png" alt="point" class="point"></a></li>
+          </ul>
+        </div>
       </div>
+      <footer>
+        <div class="footer-contents">
+          <div class="company-ditale">
+            <ul class="inc-bottom">
+              <li><p class="back1">会社概要<br>
+                                  Company outline</p></li>
+              <li> <p  class="back1">プライバシーポリシー<br>
+                                   Privacy policy</p></li>
+            </ul>
+          </div>
+          <p>美須兎酒造<br>
+          〒000-000　和歌山県鴨鹿市高松西0-0-00　TEL.000-000-0000　（9：00〜17：00　土・日・祝日を除く）<br>
+          Bisto Shuzou Co., Ltd.<br>
+          0-0-00, Takamatsu, kamoshika, City, Wkayama, 510-0225, Japan Tel.+81-59-385-0511<br>
+          <small>Copyright ©Bisuto Shuzou Co., Ltd. All Rights Reserved.</small></p>
+        </div>
+      </footer>
+        </div>
       </div>
       <script src="main.js">
       </script>
